@@ -69,8 +69,13 @@ dependencies:
 - pyyaml
 - scipy
 - sympy
+- openpyxl
 
 # Required for desktop view on mybinder.org
 - websockify
 - pip:
   - jupyter-desktop-server
+  - -e git://github.com/fumitoh/modelx.git#egg=modelx
+  - lifelib
+  - --no-deps spyder-modelx
+  
