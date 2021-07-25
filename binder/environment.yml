@@ -1,5 +1,6 @@
 channels:
 - conda-forge # Used by jupyter-desktop-server
+- fumitoh
 dependencies:
 # We can not refer to an environment.yml file from another
 # So to get performant launches on mybinder.org, we have copied
@@ -70,12 +71,11 @@ dependencies:
 - scipy
 - sympy
 - openpyxl
+- spyder-modelx
 
 # Required for desktop view on mybinder.org
 - websockify
 - pip:
   - jupyter-desktop-server
-  - -e git://github.com/fumitoh/modelx.git#egg=modelx
   - lifelib
-  - spyder-modelx
   
